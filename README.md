@@ -18,6 +18,7 @@ Uthman's global Pi skills. Each folder is one skill with a `SKILL.md`.
 | landing-page | Simple B/W landing pages, Uthman voice |
 | plan-mode | Plan-only, no code except plan.md |
 | readme-writing | Professional READMEs |
+| code-explainer | Explain a repo: purpose, architecture, details |
 | tutor | Teaching mode, progressive |
 | ui-planning-and-scaffolding | Ask before scaffolding UI |
 | ui-ux-pro-max | Searchable UI/UX guidance + scripts |
