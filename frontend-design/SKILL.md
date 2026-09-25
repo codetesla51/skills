@@ -1,13 +1,25 @@
 ---
 name: "frontend-design"
-description: "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults."
-version: 2
+description: "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one, layered with Uthman's personal defaults: black-and-white first, no decoration by default, responsive always."
+version: 3
 created: "2026-09-07"
-updated: "2026-09-07"
+updated: "2026-09-25"
 ---
 # Frontend Design
 
 Approach this as the design lead at a design studio known for giving every client a distinct visual identity that is not mistaken for anyone else's. This client has already rejected proposals that felt cliché or templated, and is paying for a distinctive point of view: make deliberate, opinionated choices about palette, typography, and layout that are specific to this brief, and take aesthetic risk if justified.
+
+## Uthman's personal defaults — apply before anything else below
+
+These are his standing defaults for his own projects, layered on top of everything else in this skill. Where the brief explicitly asks for something different (a client brief with its own stated palette, for instance), the brief wins — otherwise these are the starting point, not one option among several:
+
+- **Black and white first.** No color palette unless the brief explicitly calls for one. Not pure `#000`/`#FFF` — use near-black/near-white variants (e.g. `#0a0a0a`–`#151515` background with `#f5f5f0`–`#fafaf8` foreground, or the inverse). This is a deliberate minimal choice, not the "near-black-with-one-accent" AI cliché described below — the difference is no accent color at all, not a swapped one.
+- **No gradients, glow effects, ambient blur shapes, or drop shadows by default.** Only add these if explicitly asked for.
+- **No badges or status chips** as decoration on a page.
+- **Icons:** Google Icons (Material Symbols) or Phosphor Icons — don't reach for a random icon pack.
+- **No generic nav or footer by default.** A one-pager doesn't need a nav bar or a multi-column footer unless real content demands it — see "design over decoration" below.
+- **Responsive is never optional.** Every design is built mobile-first and checked at narrow (~375px), medium (~768px), and wide (~1440px) before it's considered done — fluid units over fixed pixels, no horizontal scroll ever (unless an intentional carousel), touch targets at least 44px, body text kept to a readable line length at every width.
+- **Design systems, not one-off choices.** Fix a small color set, a type scale, and a spacing scale up front and reuse them everywhere — don't pick a font size or spacing value ad hoc per element.
 
 ## Ground your designs in the subject matter
 
@@ -15,7 +27,7 @@ If the brief does not identify what the product or subject matter is, identify i
 
 ## Design principles
 
-For web designs, the hero is the first thing viewers will see. Open with the most characteristic thing in the subject's world, in the form that is most appropriate: a headline, an image, an animation, a live demo, an interactive moment, or other treatments. Be deliberate with your choice: a big number with a small label, supporting stats, and a gradient accent is the default treatment, so only use it if that's truly the best option.
+For web designs, the hero is the first thing viewers will see. Open with the most characteristic thing in the subject's world, in the form that is most appropriate: a headline, an image, an animation, a live demo, an interactive moment, or other treatments. Be deliberate with your choice: a big number with a small label, supporting stats, and a gradient accent is the default treatment, so only use it if that's truly the best option (and, per Uthman's defaults above, only if color/gradient was actually asked for).
 
 Typography carries the personality of the page. You don't need a different typeface for display or headline text and body content: use one family or two, and if two, make them clearly distinct.
 
@@ -34,6 +46,12 @@ Use non-user-triggered motion sparingly and deliberately, only to draw attention
 
 Consider written content carefully. Often a design brief may not contain real content, and it's up to you to come up with copy and placeholder content. Copy can make a design feel as templated as the design itself. See the below section on writing for more guidance.
 
+## Design over decoration — nav and footer
+
+- **No generic nav.** A one-pager usually doesn't need one at all — a name/logo and maybe one link beats a full nav with placeholder links to sections that don't exist. No hamburger menu or sticky nav "because pages usually have one."
+- **No generic footer.** Skip the multi-column footer (About/Product/Company/Legal, social icon row, copyright line) unless that content genuinely exists. A single line, or nothing, is usually correct.
+- If in doubt whether an element earns its place, leave it out — every element exists because the content demands it, not because similar pages usually have one.
+
 ## Process: plan, review against the brief, build, critique
 
 For calibration, AI-generated design right now clusters around some traits:
@@ -43,10 +61,10 @@ For calibration, AI-generated design right now clusters around some traits:
 4. the SaaS-card kit: content chopped into identical rounded cards, one border-radius on everything regardless of hierarchy, the same soft grey shadow (rgba(0,0,0,.1)) under each, and gradient washes as decoration;
 5. template chrome that appears whatever the subject: a tracked-out ALL-CAPS eyebrow label above every heading; meta strings joined with middle dots ('A · B · C'); labels built as 'WORD — fragment' with a spaced em dash; tinted near-black (#0B0B0B, #111) standing in for black; a monospace face for small data labels; a '→' appended to link and button text.
 
-All traits are legitimate for some briefs, but they are defaults rather than choices, and they appear regardless of subject. Where the brief pins down a visual direction, follow it exactly — the brief's own words always win, including when it asks for one of these looks. Where it leaves an axis free, don't spend that freedom on one of these defaults. As with a hired human designer, there's often a careful balance between doing what you're good at and taking each project as a chance to experiment and learn.
+All traits are legitimate for some briefs, but they are defaults rather than choices, and they appear regardless of subject. Where the brief pins down a visual direction, follow it exactly — the brief's own words always win, including when it asks for one of these looks. Where it leaves an axis free, don't spend that freedom on one of these defaults — for Uthman's own projects with no brief-stated direction, that freedom defaults to black-and-white-first per the personal defaults above, not to a color choice at all.
 
 Work in two passes. First, brainstorm a short design plan based on the client's design brief: create a compact token system with color, type, layout, and principles.
-- Color: describe the core base palette as 4–6 named hex values.
+- Color: describe the core base palette as 4–6 named hex values (for Uthman's own projects with no stated direction, this is the near-black/near-white pair plus at most one muted tone — see personal defaults above).
 - Type: the typefaces and their roles.
 - Layout: a layout concept, using one-sentence prose descriptions and ASCII wireframes to ideate and compare. Include alignment guidance; should the content be left aligned, center aligned, justified?
 - Principles: the high-level guidance for what makes this page unique.
@@ -57,7 +75,7 @@ When writing the code, be careful of structuring your CSS selector specificities
 
 ## Restraint and self-critique
 
-Spend your boldness in one place. Let one element be the memorable thing, keep everything around it quiet and disciplined, and cut any decoration that does not serve the brief. Build to a quality floor without announcing it: responsive down to mobile, visible keyboard focus, reduced motion respected, visually accessible, harmonious color palettes. Critique your own work as you build, taking screenshots to review if your environment supports it — a picture is worth 1000 tokens. Consider Chanel's advice: before leaving the house, take a look in the mirror and remove one accessory. Human creatives have memory and always try to do something new, so if you have a space to quickly jot down notes about what you've tried, it can help you in future passes.
+Spend your boldness in one place. Let one element be the memorable thing, keep everything around it quiet and disciplined, and cut any decoration that does not serve the brief. Build to a quality floor without announcing it: responsive down to mobile (checked at narrow/medium/wide, not assumed — see personal defaults above), visible keyboard focus, reduced motion respected, visually accessible, harmonious color palettes. Critique your own work as you build, taking screenshots to review if your environment supports it — a picture is worth 1000 tokens. Consider Chanel's advice: before leaving the house, take a look in the mirror and remove one accessory. Human creatives have memory and always try to do something new, so if you have a space to quickly jot down notes about what you've tried, it can help you in future passes.
 
 ## More on writing in design
 
@@ -69,4 +87,4 @@ Use active voice as default. A CTA says exactly what happens when it is used: "S
 
 Treat failure and emptiness as moments for direction, not mood. Explain what went wrong and how to fix it, in the interface's voice rather than a person's. Errors don't apologize, and they are never vague about what happened. An empty screen is an invitation to act.
 
-Keep the tone conversational: plain verbs, sentence case, no filler, with tone matched to the brand and the audience. Let each written element do exactly one job.
+Keep the tone conversational: plain verbs, sentence case, no filler, with tone matched to the brand and the audience. Let each written element do exactly one job. For Uthman's own projects, this also means matching how he'd actually say it — direct, plain, no marketing voice — per his usual copy preferences.
