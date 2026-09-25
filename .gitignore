@@ -1,0 +1,16 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Operating-system and editor leftovers
+.DS_Store
+*.swp
+*~
