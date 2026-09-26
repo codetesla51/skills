@@ -1,9 +1,9 @@
 ---
 name: "ui-planning-and-scaffolding"
 description: "How to plan and scaffold a UI before writing code. Ask structured questions first, never scaffold silently."
-version: 2
+version: 3
 created: "2026-09-07"
-updated: "2026-09-07"
+updated: "2026-09-26"
 ---
 # UI Planning & Scaffolding
 
@@ -97,6 +97,10 @@ Follow the existing pattern from other modules in `.config/quickshell/modules/` 
 **After scaffolding:**
 - Explain what was created and why it's shaped that way (see the explainer skill — high-level first, then the low-level reasoning for the structure chosen).
 - Don't fill in real logic beyond the minimum needed to prove the scaffold runs/renders — a scaffold's job is to establish structure, not deliver the feature. Confirm the shape is right before building further on top of it.
+
+## Forbidden rules — carry through to the build phase (brief wins)
+
+This skill plans structure, not visuals — but pass these bans to whatever build skill follows so they aren't lost. Unless the brief explicitly asks for it, the built UI must NEVER have: a color palette (black-white first, near-black `#0a0a0a`–`#151515` / off-white `#f5f5f0`–`#fafaf8`, never pure `#000`/`#FFF`, no accent); gradients/glow/blur/neon/glass/shadows; badges/chips as decoration; icons outside Google Material Symbols or Phosphor; a generic nav/footer; single-word headline accents; ALL-CAPS eyebrows per heading; `01/02/03` markers unless true sequence; `A · B · C` meta; `WORD — fragment` labels; `→` on links; a default big-number hero or any AI cliché (cream `#F4F1EA` + terracotta `#D97757`, near-black + acid-green/vermilion, broadsheet hairlines, SaaS-card kit); per-section fade-slide-up or per-card hover lift; ad-hoc color/type/spacing; non-responsive layout (floor: 375/768/1440, ≥44px targets, no h-scroll); hype copy. Canonical wording lives in `frontend-design/SKILL.md` — that file wins on disagreements.
 
 ## What to avoid
 

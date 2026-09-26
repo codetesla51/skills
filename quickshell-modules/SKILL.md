@@ -1,14 +1,17 @@
 ---
 name: "quickshell-modules"
 description: "Build, fix, and verify quickshell modules in ~/dotfiles without killing the bar; includes the Amber Bento design language (bento cards, warm amber accents, gradients, letter-spaced labels, glyph chips, glassmorphic surfaces)"
-version: 11
+version: 12
 created: "2026-09-10"
-updated: "2026-09-25"
+updated: "2026-09-26"
 ---
 # Quickshell Modules
 
 ## When to Use
 Use when building, fixing, or debugging any quickshell module, panel, or popup in ~/dotfiles/.config/quickshell — especially when the bar disappears, IPC targets go missing, a new window misbehaves, or redesigning UI (ControlCenter, DriveHealth, panels). ALL new/styled UI must follow the Amber Bento design language (see the Amber Bento step in Procedure) — keep it consistent, do not invent new colors or spacing.
+
+### Scope note — global web forbiddens vs Amber Bento (read this first)
+The `frontend-design` global forbidden rules (black-white-first, no gradients/glass/chips/uppercase-labels) apply to web/app/marketing UI — they do NOT override the Amber Bento house style inside ~/dotfiles rice. For quickshell modules the brief IS Amber Bento: amber `#f3bc87` + tan `#dfc1a8` + ice `#9bcee3` accents, 0.3–0.5 alpha glass fills, 22–26px chips, 7px uppercase labels with 1.3 letter-spacing, and gradient/slider fills are required, not banned. Apply the global bans only when building non-rice UI, or when explicitly asked to diverge from Bento.
 
 ## Procedure
 1. Read ~/dotfiles/.config/quickshell/AGENTS.md first — canonical path is always quickshell -p ~/.config/quickshell, identical string everywhere.

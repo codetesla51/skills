@@ -17,6 +17,10 @@ description: Usage rules that you must use with daisyUI 5
 11. For design decisions, use the methods in the Refactoring UI book.
 12. If the user does not request a variant or color, use the default variant. For example, use `btn` for a button. If the user does not request that variant, do not use `btn btn-primary`.
 
+### Uthman's global bans (brief wins)
+
+Unless explicitly asked: no `btn-primary`/accent colors, no `glass`, no badge/chip decoration, no generic navbar/footer/hero, no gradient/glow/shadow polish, no `→` on links, responsive (375/768/1440, ≥44px targets, no h-scroll) always. Canonical wording lives in `frontend-design/SKILL.md`.
+
 Each daisyUI 5 class name is in one of these categories. These category names are for reference only. Do not use them in code.
 - `component`: The necessary component class.
 - `part`: A child part of a component.

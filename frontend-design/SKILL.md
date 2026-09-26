@@ -1,13 +1,30 @@
 ---
 name: "frontend-design"
 description: "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one, layered with Uthman's personal defaults: black-and-white first, no decoration by default, responsive always."
-version: 3
+version: 4
 created: "2026-09-07"
-updated: "2026-09-25"
+updated: "2026-09-26"
 ---
 # Frontend Design
 
 Approach this as the design lead at a design studio known for giving every client a distinct visual identity that is not mistaken for anyone else's. This client has already rejected proposals that felt cliché or templated, and is paying for a distinctive point of view: make deliberate, opinionated choices about palette, typography, and layout that are specific to this brief, and take aesthetic risk if justified.
+
+## Forbidden rules — global (brief wins, applies to every design skill)
+
+Unless the brief explicitly asks for it, NEVER do any of these. This list overrides any default in this skill, its references, or any search/database result:
+- No color palette — black-white first (near-black `#0a0a0a`–`#151515` / off-white `#f5f5f0`–`#fafaf8`, never pure `#000`/`#FFF`, never tinted `#0B0B0B`/`#111` as default, no accent color at all).
+- No gradients, glow, ambient blur shapes, neon accents, glass effects, or drop shadows (including the `rgba(0,0,0,.1)` card shadow).
+- No badges or status chips as decoration.
+- Icons only: Google Material Symbols or Phosphor Icons. No emoji as icons, no random icon packs.
+- No generic nav/footer — no hamburger/sticky nav or multi-column About/Product/Legal + social row + © line unless real content demands it. When in doubt, leave it out.
+- Typography bans: no single-word accent in a headline (one italic/bold/colored word); no ALL-CAPS or tracked-out eyebrow above every heading; no unnecessary labels above content; no monospace for small data labels by default; no `01 / 02 / 03` markers unless the content is a true sequence.
+- Template-chrome bans: no `A · B · C` middle-dot meta strings; no `WORD — fragment` spaced-em-dash labels; no `→` appended to links/buttons.
+- No default hero (big number + small label + stats + gradient) and none of the AI clichés: cream `#F4F1EA` + terracotta `#D97757` serif; near-black + acid-green/vermilion accent; broadsheet hairlines with zero radius and dense columns; SaaS-card kit (identical rounded cards, one radius everywhere, gradient wash).
+- Motion: no fade-slide-up entrance per section, no hover lift on every card. One orchestrated moment max, or motion that answers a user action. Respect reduced-motion.
+- No ad-hoc tokens — fix a small color/type/spacing scale up front and reuse it everywhere; one button style, one card style, one input style.
+- Responsive floor: mobile-first, fluid units, no horizontal scroll (except an intentional carousel), touch targets ≥44px, body 50–75 chars per line, checked at ~375px / ~768px / ~1440px.
+- Copy in Uthman's voice (direct, plain, no marketing). No hype words (supercharge/unlock/seamless/blazing fast), minimal em dashes, sentence case, active voice, CTA says what happens ("Save changes", not "Submit").
+- One bold element max — remove one accessory before shipping.
 
 ## Uthman's personal defaults — apply before anything else below
 

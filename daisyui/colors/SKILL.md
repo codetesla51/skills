@@ -40,6 +40,10 @@ description: Color rules that you must use with daisyUI 5
 10. Use `base-*` colors for most of the page. Use the default variant for all elements. Use `primary` only for the most important element on the page. Use it only once.
 11. In rare cases, you can use a Tailwind CSS color if content must keep the same color in all themes. For example, you can use `text-red-500` instead of `text-error`. For an SVG icon or chart, a fixed color can be necessary.
 
+### Uthman's global bans (brief wins, override the above)
+
+Unless the brief explicitly asks for a palette, default to black-white only: near-black `#0a0a0a`–`#151515` / off-white `#f5f5f0`–`#fafaf8`, never pure `#000`/`#FFF`. No accent color, no gradient/glow/shadow decoration, no badges as decoration. If a custom theme is requested, keep it to background + foreground + at most one muted tone. Canonical wording lives in `frontend-design/SKILL.md`.
+
 ### Enable and apply themes
 
 The default configuration enables `light` and `dark`. In the daisyUI plugin, select specified themes, all themes, or no built-in themes:

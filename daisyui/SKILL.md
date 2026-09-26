@@ -112,3 +112,13 @@ Before you write daisyUI code, do these steps in sequence:
 You must match the meaning, even when the words are different from component names. A component with a different name can still be the best match. Always examine the intended function and meaning.
 
 If the user requests a named component and a guide with that name exists, read that guide first.
+
+## Forbidden rules — Uthman's global bans (brief wins, override component defaults)
+
+Unless the brief explicitly asks for it, NEVER do any of these — even if a component guide shows them. Canonical wording lives in `frontend-design/SKILL.md`; that file wins on disagreements.
+- No color palette by default — black-white first (near-black `#0a0a0a`–`#151515` / off-white `#f5f5f0`–`#fafaf8`, never pure `#000`/`#FFF`, no accent). Do not reach for `btn-primary`, colored badges, or accent themes unless asked.
+- No gradients, glow, ambient blur, neon, glass, or drop shadows as decoration. No `glass` class unless explicitly asked.
+- No badges/chips as decoration. No generic navbar/footer/hero unless real content demands it — a name plus at most one link beats placeholder chrome.
+- Typography bans: no single-word headline accent; no ALL-CAPS eyebrow per heading; no `01/02/03` unless true sequence; no `A · B · C` meta; no `WORD — fragment` labels; no `→` on links/buttons.
+- No SaaS-card kit (identical rounded cards everywhere, one radius, soft shadow + gradient wash). One radius system via theme tokens, not per-component improvisation.
+- Responsive floor always: mobile-first, no h-scroll (except carousel), ≥44px targets, checked at 375/768/1440.

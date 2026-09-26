@@ -1,9 +1,9 @@
 ---
 name: "ui-ux-pro-max"
 description: "UI/UX design intelligence for web, mobile, and desktop. Use when designing, building, reviewing, or fixing interfaces."
-version: 2
+version: 3
 created: "2026-09-07"
-updated: "2026-09-07"
+updated: "2026-09-26"
 ---
 # UI/UX Pro Max - Design Intelligence
 
@@ -33,6 +33,20 @@ Skip it for pure backend logic, API/database design, non-visual performance work
 | 10 | Charts & Data | LOW | `chart` | Legends, Tooltips, Accessible colors | Relying on color alone to convey meaning |
 
 For the full rule list per category (all 119 UX guidelines with rationale), read `references/quick-reference.md`. For app-specific polish rules (icons, touch feedback, dark mode contrast, safe areas) and the canonical pre-delivery checklist, read `references/pro-rules.md`.
+
+## Forbidden rules — Uthman's global bans (brief wins, override this skill's database)
+
+Unless the brief explicitly asks for it, NEVER do any of these — even if a `--design-system`, `--domain`, or `--stack` search result suggests them. If the database disagrees, this list wins. Canonical wording lives in `frontend-design/SKILL.md`.
+- No color palette — black-white first (near-black `#0a0a0a`–`#151515` / off-white `#f5f5f0`–`#fafaf8`, never pure `#000`/`#FFF`, no accent).
+- No gradients, glow, ambient blur, neon, glass, or drop shadows. No badges/chips as decoration.
+- Icons only: Google Material Symbols or Phosphor. No emoji as icons, no random packs.
+- No generic nav/footer unless real content demands it.
+- Typography bans: no single-word headline accent; no ALL-CAPS/tracked-out eyebrow per heading; no unnecessary labels above content; no monospace data labels by default; no `01/02/03` unless true sequence.
+- Template-chrome bans: no `A · B · C` meta; no `WORD — fragment` labels; no `→` on links/buttons.
+- No default big-number hero; none of the AI clichés (cream `#F4F1EA` + terracotta `#D97757`; near-black + acid-green/vermilion; broadsheet hairlines; SaaS-card kit).
+- Motion: no fade-slide-up per section, no hover lift per card. One orchestrated moment max or user-triggered motion only. Respect reduced-motion.
+- No ad-hoc color/type/spacing — fixed scale reused everywhere. Responsive floor: mobile-first, fluid, no h-scroll (except carousel), ≥44px targets, 50–75 chars/line, checked at 375/768/1440.
+- Copy in Uthman's voice, no hype (supercharge/unlock/seamless/blazing fast), minimal em dashes, CTA says what happens. One bold element max.
 
 ---
 
