@@ -56,6 +56,7 @@ Map of every skill in this repo. Match the task to a branch, then load ONLY the 
 | Scaffold a UI first | `ui-planning-and-scaffolding/` |
 | UI/UX review or fix | `ui-ux-pro-max/` |
 | Quickshell bar modules in ~/dotfiles | `quickshell-modules/` |
+| Saved design-system reference for inspiration | `design-systems/` (index first, then at most 1-2 files) |
 | Obsidian notes, wikilinks, callouts | `obsidian-markdown/` |
 | Operate on the vault from CLI | `obsidian-cli/` |
 | Obsidian Bases (.base) | `obsidian-bases/` |
@@ -63,5 +64,7 @@ Map of every skill in this repo. Match the task to a branch, then load ONLY the 
 | Templates → Markdown notes (Knap) | `knap/` |
 | HTML → clean Markdown (Defuddle) | `defuddle/` |
 | Deploy Go on Azure VMs | `azure-deployment/` |
+| Design a data/KPI dashboard, pick KPIs or BI tool | `dashboard-designer/` |
+| Build a chart, pick chart type, chart code | `chart-builder/` |
 
 Each skill lives at `<name>/SKILL.md` relative to this file.
