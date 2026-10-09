@@ -77,6 +77,12 @@ Fitting is not enough: a layout that fits and gives every block the same weight 
 34. GROUP BY PROXIMITY. Gaps inside a group are smaller than gaps between groups (for example 4-8px inside, 10-16px between). Equal gaps everywhere erase the grouping.
 35. WEIGHT AND BRIGHTNESS BEFORE COLOR. Show importance with size, weight and opacity first; color second. Make secondary content dimmer, not a new hue.
 
+## Functional beauty (looks good AND works)
+A section that works but looks unfinished is a defect, same as a pretty one that does nothing. Every block must pass both bars before it ships.
+40. EVERY CONTROL LOOKS TOUCHABLE. Buttons, toggles, sliders, rows: distinct rest shape (fill or border), visible hover move (step 25), pressed or active state. If it looks like a label, users won't tap it; if it looks like a button and does nothing, that's worse — wire it or remove it.
+41. DATA DRESSED, NOT DUMPED. Raw values get units, labels and scale ("136 MB of 2 GB", never "136.5"); every meter pairs with its number; timestamps are relative ("2m", not full dates). Numbers in columns align right and tabular so they scan.
+42. RHYTHM OVER ORNAMENT. Beauty comes from alignment, even gaps and the type scale (step 23) — not extra borders, icons or colors. When a section looks off, fix spacing and alignment first; reach for decoration never.
+
 ## Empty, loading, error and unknown states (graceful, never break the UI)
 Real data is often missing, late, zero, huge or wrong. Every module must look intentional in those states and must never throw, collapse, jump or overflow.
 36. DESIGN EVERY STATE, SAME FOOTPRINT. Every list, meter and value block has a designed empty state, loading state, error state and (for links) lost state, in the SAME height and position as the filled state. Other blocks must not move when a block flips between states. The empty state is calm and useful: one dim line saying what is missing plus, when there is one, what to do ("No files here. Drop some above." / "Connect a phone to browse it"), never a bare "No data" and never a blank gap. Loading shows a placeholder or "…" in place, not a spinner that changes the layout.
@@ -142,6 +148,7 @@ function dumpUi() {
 - A status pill or banner added as a layout item makes the whole column jump when it appears (step 26).
 - An empty state that collapses the block or shifts the rest of the layout, or a bare "No data". Same footprint, one useful line (step 36).
 - Reading `model[currentIndex]` with an empty model, or dividing by a zero total. Guard both (step 38).
+- A working control that looks like a label (no shape, no hover, no pressed state) — users never find it.
 - A flat layout: everything at the same size and weight, three loud buttons, no focal point. Do steps 29-35 before building.
 - A one-accent module (everything primary). Two different accent roles, by purpose, every time.
 - Re-inventing the glass rectangle (own alpha, border, radius) instead of copying the shared plugin format.
