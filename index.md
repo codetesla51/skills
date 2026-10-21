@@ -44,6 +44,8 @@ Map of every skill in this repo. Match the task to a branch, then load ONLY the 
 | Reverse engineer a binary, app, firmware, or shipped artifact | `reverse-engineer-anything/` |
 | Explain anything to Uthman | `explainer/` |
 | App is slow, find the bottleneck | `barrage/` |
+| Make code/queries/APIs faster, systematic optimization | `perf-optimizer/` (loads `barrage/` first) |
+| Write SQL, design schemas, migrations, indexes, transactions | `sql-production/` |
 | Commit, PR, release, tag, CI, `gh` CLI | `git-workflow/` |
 | Plan before coding | `plan-mode/` |
 | Plan software architecture | `architecture-planning/` |
