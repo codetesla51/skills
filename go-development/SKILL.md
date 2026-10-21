@@ -18,6 +18,7 @@ Use for any Go task; load the referenced skills below as needed.
 7. git-workflow: conventional atomic commits, gh CLI, CI gate then tag release.
 8. azure-deployment: status-first, az direct, systemd/Caddy/Postgres, deploy after CI.
 9. readme-writing: title, what, why, alternatives, features, explained example, gotchas.
+10. go-test-hardening: attack-first tests, edge cases, fuzzing, race, real Postgres, fakes, mutation testing, known-gaps report.
 ## Pitfalls
 - Skipping the relevant skill for the task at hand.
 

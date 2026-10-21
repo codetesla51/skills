@@ -37,6 +37,7 @@ Map of every skill in this repo. Match the task to a branch, then load ONLY the 
 | Writing/editing Go: maps, slices, pointers, goroutines, channels, resources | `go-quirks-and-safety/` |
 | Simplifying AI-written Go | `go-codebase-cleanup/` |
 | Pre-ship audit, PR review, "is this safe to ship" | `go-preship-check/` |
+| Write/review Go tests, make code "bulletproof", mutation testing | `go-test-hardening/` |
 | Designing a Go library API | `api-library-design/` |
 | A bug to find and fix | `debugging/` |
 | Explain a repo / teach a codebase | `code-explainer/` |
