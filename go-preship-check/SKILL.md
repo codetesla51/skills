@@ -1,6 +1,6 @@
 ---
 name: "go-preship-check"
-description: "Run this before shipping, merging, or tagging a release on any Go codebase. Catches the bug classes that compile clean, pass tests, and still break in production — goroutine leaks, panics that skip deferred cleanup, non-atomic shared state, swallowed errors, unpropagated context, uninitialized maps, unclosed resources, and other correctness issues Go's compiler and go vet don't catch. Use whenever the user asks to review code before shipping, check for bugs, do a pre-release audit, review a PR, or asks "is this safe to ship" — even if they don't name a specific bug class. Also use proactively after writing any new goroutine, defer block, global variable, or long-lived worker/pool code."
+description: "Run this before shipping, merging, or tagging a release on any Go codebase. Catches the bug classes that compile clean, pass tests, and still break in production — goroutine leaks, panics that skip deferred cleanup, non-atomic shared state, swallowed errors, unpropagated context, uninitialized maps, unclosed resources, and other correctness issues Go's compiler and go vet don't catch. Use whenever the user asks to review code before shipping, check for bugs, do a pre-release audit, review a PR, or asks \"is this safe to ship\" — even if they don't name a specific bug class. Also use proactively after writing any new goroutine, defer block, global variable, or long-lived worker/pool code."
 version: 1
 created: "2026-09-25"
 updated: "2026-09-25"
