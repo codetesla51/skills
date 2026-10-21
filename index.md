@@ -41,6 +41,7 @@ Map of every skill in this repo. Match the task to a branch, then load ONLY the 
 | Designing a Go library API | `api-library-design/` |
 | A bug to find and fix | `debugging/` |
 | Explain a repo / teach a codebase | `code-explainer/` |
+| Reverse engineer a binary, app, firmware, or shipped artifact | `reverse-engineer-anything/` |
 | Explain anything to Uthman | `explainer/` |
 | App is slow, find the bottleneck | `barrage/` |
 | Commit, PR, release, tag, CI, `gh` CLI | `git-workflow/` |
@@ -62,6 +63,7 @@ Map of every skill in this repo. Match the task to a branch, then load ONLY the 
 | Operate on the vault from CLI | `obsidian-cli/` |
 | Obsidian Bases (.base) | `obsidian-bases/` |
 | Canvas files (.canvas) | `json-canvas/` |
+| Draw a diagram or flowchart as .excalidraw | `excalidraw-diagram/` |
 | Templates → Markdown notes (Knap) | `knap/` |
 | HTML → clean Markdown (Defuddle) | `defuddle/` |
 | Deploy Go on Azure VMs | `azure-deployment/` |
