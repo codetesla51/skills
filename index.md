@@ -56,7 +56,6 @@ Map of every skill in this repo. Match the task to a branch, then load ONLY the 
 | Any UI/design work | `design/` (router — picks sub-skills) |
 | HTML/JSX + Tailwind | `daisyui/` (mandatory for HTML/JSX) |
 | Distinctive visual design, not defaults | `frontend-design/` |
-| Landing page | `landing-page/` |
 | Scaffold a UI first | `ui-planning-and-scaffolding/` |
 | UI/UX review or fix | `ui-ux-pro-max/` |
 | Quickshell bar modules in ~/dotfiles | `quickshell-modules/` |
